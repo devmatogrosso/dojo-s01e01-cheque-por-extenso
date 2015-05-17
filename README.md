@@ -38,25 +38,25 @@ Maior integração para que todos possam codar
 Usar números aleatórios para quem chega, para que todos possam programar [ utilizar um programinha para sortear e contar os números ]
 
 ## Quem Participou?
-Gabriel Santos  
-Mahmoud Ali :hi5:  
-Gabriel Pedro  
-Wesley Teixeira  
-VIctor Hugo  
-Luan Castro  
-Pedro Costa  
-Marcos Faneli  
-Alvaro Viebrantz  
+[Gabriel Santos](https://github.com/Gabriel-Araujo)  
+[Mahmoud Ali](https://github.com/akamud) :hi5:  
+[Gabriel Pedro](https://github.com/gpedro)  
+[Wesley Teixeira](https://github.com/wesleyteixeira)  
+[Victor Hugo](https://github.com/victorhsn)  
+[Luan Castro](https://github.com/castrolol)  
+[Pedro Costa](https://github.com/pedrofcj)  
+[Marcos Faneli](https://github.com/marcosfaneli)  
+[Alvaro Viebrantz](https://github.com/alvarowolfx)  
 Alison Ribeiro  
 Jusolu Borges  
-Evandro Silva Pinto  
-Fabian Carlos  
-Edipo Juan  
-Rafael Fracasso  
+[Evandro Silva Pinto](https://github.com/EvandroSilvaPinto)  
+[Fabian Carlos](https://github.com/fabiancarlos)  
+[Édipo Juan](https://github.com/edipojs)  
+[Rafael Fracasso](https://github.com/rafaelfracasso)  
 Gabriel Simplício  
-João Vitor Carmo  
+[João Vitor Carmo](https://github.com/jvitor83)  
 Jonas Ferreiro  
-Madson VIana  
-Dhyego Fernando :alo:  
+[Madson Viana](https://github.com/madsonviana)  
+[Dhyego Fernando](https://github.com/dhyegofernando) :alo:  
 
 :)
