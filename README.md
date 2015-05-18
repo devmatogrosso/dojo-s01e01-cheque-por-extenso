@@ -46,7 +46,7 @@ Usar números aleatórios para quem chega, para que todos possam programar [ uti
 [Marcos Faneli](https://github.com/marcosfaneli)  
 [Alvaro Viebrantz](https://github.com/alvarowolfx)  
 [Alison Ribeiro](https://github.com/asr008)  
-[Jusolu Borges](https://github.com/jotace1992)
+[Jusolu Borges](https://github.com/jotace1992)  
 [Evandro Silva Pinto](https://github.com/EvandroSilvaPinto)  
 [Fabian Carlos](https://github.com/fabiancarlos)  
 [Édipo Juan](https://github.com/edipojs)  
