@@ -19,19 +19,17 @@ Exemplo:
 
 [Link do problema](http://dojopuzzles.com/problemas/exibe/cheque-por-extenso/)
 
-
 ## Retropesctiva
 ### O que teve de bom?
-Local Massa Veio!  
-Networking  
-Galera de Peso  
-Galera do C#
+* Local Massa Veio!  
+* Networking  
+* Galera de Peso  
+* Galera do C#
 
 ### O que teve de Ruim?
-Abertura do Portão	  
-Pessoal formou grupos de panelinha dentro das panelinha (haha)  
-Tests nao passaram, mas enfim, o que é a vida, né?  
-
+* Abertura do Portão	  
+* Pessoal formou grupos de panelinha dentro das panelinha (haha)  
+* Tests nao passaram, mas enfim, o que é a vida, né?  
 
 ## O que podemos fazer no proximo?
 Maior integração para que todos possam codar  
@@ -47,8 +45,8 @@ Usar números aleatórios para quem chega, para que todos possam programar [ uti
 [Pedro Costa](https://github.com/pedrofcj)  
 [Marcos Faneli](https://github.com/marcosfaneli)  
 [Alvaro Viebrantz](https://github.com/alvarowolfx)  
-Alison Ribeiro  
-Jusolu Borges  
+[Alison Ribeiro](https://github.com/asr008)  
+[Jusolu Borges](https://github.com/jotace1992)
 [Evandro Silva Pinto](https://github.com/EvandroSilvaPinto)  
 [Fabian Carlos](https://github.com/fabiancarlos)  
 [Édipo Juan](https://github.com/edipojs)  
@@ -58,5 +56,9 @@ Gabriel Simplício
 Jonas Ferreiro  
 [Madson Viana](https://github.com/madsonviana)  
 [Dhyego Fernando](https://github.com/dhyegofernando) :alo:  
+
+## Dojo in Fork
+
+* Ruby: [DadoCe/dojo-s01e01](https://github.com/DadoCe/dojo-s01e01)
 
 :)
