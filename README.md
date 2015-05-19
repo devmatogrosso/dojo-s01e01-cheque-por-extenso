@@ -60,5 +60,6 @@ Jonas Ferreiro
 ## Dojo in Fork
 
 * Ruby: [DadoCe/dojo-s01e01](https://github.com/DadoCe/dojo-s01e01)
+* Scala: [alvarowolfx/dojo-s01e01-cheque-por-extenso.scala](https://github.com/alvarowolfx/dojo-s01e01-cheque-por-extenso.scala)
 
 :)
