@@ -63,5 +63,6 @@ Jonas Ferreiro
 * Scala: [alvarowolfx/dojo-s01e01-cheque-por-extenso.scala](https://github.com/alvarowolfx/dojo-s01e01-cheque-por-extenso.scala)
 * Clojure: [alvarowolfx/dojo-s01e01-cheque-por-extenso.clj](https://github.com/alvarowolfx/dojo-s01e01-cheque-por-extenso.clj)
 * Python: [Gabriel-Araujo/dojo-s01e01-cheque-por-extenso.python](https://github.com/Gabriel-Araujo/dojo-s01e01-cheque-por-extenso.python)
+* JavaScript/NodeJS: [gpedro/dojo-s01e01-cheque-por-extenso.js](https://github.com/gpedro/dojo-s01e01-cheque-por-extenso.js)
 
 :)
