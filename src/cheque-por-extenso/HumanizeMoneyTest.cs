@@ -24,50 +24,31 @@ namespace csharpDojo
 {
     public class HumanizeMoneyTest
     {
-        public HumanizeMoneyTest()
+        [Theory]
+        [InlineData(1, "um real")]
+        [InlineData(10, "dez reais")]
+        [InlineData(17, "dezessete reais")]
+        [InlineData(25, "vinte e cinco reais")]
+        [InlineData(100, "cem reais")]
+        [InlineData(182, "cento e oitenta e dois reais")]
+        [InlineData(587, "quinhentos e oitenta e sete reais")]
+        [InlineData(3000, "três mil reais")]
+        [InlineData(3250, "três mil, duzentos e cinquenta reais")]
+        public void TesteSemCentavos(decimal valor, string expected)
         {
+            Assert.Equal(expected, HumanizeMoney.Humanize(valor));
         }
-
-
-        [Fact]
-        public void TestCom1()
+        
+        [Theory]
+        [InlineData(0.33, "trinta e três centavos")]
+        [InlineData(1.50, "um real e cinquenta centavos")]
+        [InlineData(10.32, "dez reais e trinta e dois centavos")]
+        [InlineData(182.28, "cento e oitenta e dois reais e vinte e oito centavos")]
+        [InlineData(3000.21, "três mil reais e vinte e um centavos")]
+        [InlineData(3250.36, "três mil, duzentos e cinquenta reais e trinta e seis centavos")]
+        public void TesteComCentavos(decimal valor, string expected)
         {
-            var humanizeMoney = new HumanizeMoney(1);
-            Assert.Equal("um real", humanizeMoney.Humanize());
-
+            Assert.Equal(expected, HumanizeMoney.Humanize(valor));
         }
-
-        [Fact]
-        public void TestCom10()
-        {
-            var humanizeMoney = new HumanizeMoney(10);
-            Assert.Equal("dez reais", humanizeMoney.Humanize()); 
-             
-        }
-
-        [Fact]
-        public void TestCom21()
-        {
-            var humanizeMoney = new HumanizeMoney(21);
-            Assert.Equal("vinte e um reais", humanizeMoney.Humanize());
-
-        }
-
-        [Fact]
-        public void testcom100()
-        {
-            var humanizemoney = new HumanizeMoney(100);
-            Assert.Equal("cem reais", humanizemoney.Humanize());
-
-        }
-
-        [Fact]
-        public void testcom101()
-        {
-            var humanizemoney = new HumanizeMoney(101);
-            Assert.Equal(humanizemoney.Humanize(), "cento e um reais");
-
-        }
-
     }
 }
