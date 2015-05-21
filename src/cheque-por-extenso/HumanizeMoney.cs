@@ -1,12 +1,11 @@
 using System.Collections.Generic;
+using System;
 
 namespace csharpDojo
 {
-    public class HumanizeMoney
+    public static class HumanizeMoney
     {
-        
-        public decimal valor;
-        private Dictionary<int, string> numeros = new Dictionary<int, string>
+        private static readonly Dictionary<int, string> numeros = new Dictionary<int, string>()
         {
             {1, "um"},
             {2, "dois"},
@@ -36,87 +35,75 @@ namespace csharpDojo
             {80, "oitenta"},
             {90, "noventa"},
             {100, "cento"},
-            {200, "duzento"},
-            {300, "cinco"},
-            {400, "cinco"},
-            {500, "cinco"},
-            {1000, "cinco"}
+            {200, "duzentos"},
+            {300, "trezentos"},
+            {400, "quatrocentos"},
+            {500, "quinhentos"},
+            {600, "seiscentos"},
+            {700, "setecentos"},
+            {800, "oitocentos"},
+            {900, "novecentos"}
         };
         
-        public HumanizeMoney(decimal valor)
+        private static string HumanizeCore(int valor)
         {
-            this.valor = valor;
-        }
-        
-        public string Humanize()
-        {
-            var inteiro = (int)this.valor;
+            var extenso = new List<string>();
+            string extensoMilhar = "";
 
-            if (inteiro < 1)
+            if (valor / 1000 > 0)
             {
-                return "zero";
+                int valorMilhar = valor;
+                valor %= 1000;
+                extensoMilhar = HumanizeCore(valorMilhar / 1000) + (valor > 0 ? " mil, " : " mil");
             }
 
-            var moeda = "reais";
+            if (valor / 100 > 0)
+            {
+                int valorCentena = valor;
+                valor %= 100;
+                
+                if (valorCentena == 100)
+                {
+                    extenso.Add("cem");
+                }
+                else
+                {
+                    extenso.Add(numeros[valorCentena - valor]);                   
+                }
+                
+            }
+            
+            if (valor > 20)
+            {
+                int valorDezena = valor;
+                valor %= 10;
+                extenso.Add(numeros[valorDezena - valor]);
+            }
 
-            if (valor <= 1)
+            if (valor > 0)
+                extenso.Add(numeros[valor]);
+
+            return extensoMilhar + string.Join(" e ", extenso.ToArray());
+        }
+        
+        public static string Humanize(decimal valor)
+        {
+            int valorInteiro = (int) Math.Truncate(valor);
+            int valorCentavos = (int) Math.Truncate((valor - valorInteiro) * 100);
+            
+            string moeda = "reais";
+            if (valorInteiro <= 1)
             {
                 moeda = "real";
             }
-
-
-            var numeroString = "";
             
-            // Nao o valor no dic
-            var qtdeCasas = inteiro.ToString().Length;
+            string numeroString = "";
+            if (valorInteiro > 0)
+                numeroString += HumanizeCore(valorInteiro) + " " + moeda;
+            if (valorCentavos > 0)
+                numeroString += (numeroString != "" ? " e " : "") + HumanizeCore(valorCentavos) + " centavos";
 
-            //if (inteiro >= 1000)
-            //{
-            //    int valorMilhar = inteiro / 1000;
-            //}
-                
-            var milhar = inteiro % 1000;
-            var dezena = (inteiro % 100);
-            var unidade = inteiro % 10;
-
-            if (milhar > 0)
-            {
-                if (inteiro == 100)
-                {
-                    numeroString = "cem";
-                }
-                else
-                { 
-                    numeroString += numeros[milhar];
-                }
-            }
-
-            if (dezena > 0)
-            {
-                if (dezena <= 20)
-                {
-                    numeroString += numeros[dezena];
-                }
-                else
-                {
-                    var restoDaDezena = dezena % 10;
-                 
-                    numeroString += numeros[restoDaDezena];
-                }
-            }
-            //else if(unidade > 0)
-            //{
-            //    numeroString += numeros[unidade];
-            //}
-
-            string retorno = numeroString + " " + moeda;
-            return retorno;
-            
+            return numeroString;
         }
-        public string parseNumber(int number)
-        {
-            return null;
-        }
-        
     }
 }
