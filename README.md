@@ -66,5 +66,6 @@ Jonas Ferreiro
 * JavaScript/NodeJS: [gpedro/dojo-s01e01-cheque-por-extenso.js](https://github.com/gpedro/dojo-s01e01-cheque-por-extenso.js)
 * Java: [gpedro/dojo-s01e01-cheque-por-extenso.java](https://github.com/gpedro/dojo-s01e01-cheque-por-extenso.java)
 * JavaScript: [castrolol/dojo-s01e01-cheque-por-extenso.js](https://github.com/castrolol/dojo-s01e01-cheque-por-extenso.js)
-* 
+* JavaScript/AngularJS: [gpedro/dojo-s01e01-cheque-por-extenso.angular](https://github.com/gpedro/dojo-s01e01-cheque-por-extenso.angular)
+
 :)
