@@ -68,5 +68,6 @@ Jonas Ferreiro
 * JavaScript: [castrolol/dojo-s01e01-cheque-por-extenso.js](https://github.com/castrolol/dojo-s01e01-cheque-por-extenso.js)
 * JavaScript/AngularJS: [gpedro/dojo-s01e01-cheque-por-extenso.angular](https://github.com/gpedro/dojo-s01e01-cheque-por-extenso.angular)
 * Elixir: [EduardoMRB/dojo-s01e01-elixir](https://github.com/EduardoMRB/dojo-s01e01-elixir)
+* Kotlin: [castrolol/dojo-s01e01-cheque-por-extenso.kotlin](https://github.com/castrolol/dojo-s01e01-cheque-por-extenso.kotlin)
 
 :)
